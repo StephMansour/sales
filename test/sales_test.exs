@@ -15,7 +15,7 @@ defmodule SalesTest do
       %{id: 1, amount: 1000, closed_at: ~N[2016-11-01 08:10:00]},
       %{id: 2, amount: 1000, closed_at: ~N[2016-11-01 12:20:00]},
       %{id: 3, amount: 1000, closed_at: ~N[2016-11-01 23:30:00]}]
-    assert Sales.process_amounts(deal) == 3000
+    assert Sales.process_amounts(deals) == 3000
   end
 
 end
